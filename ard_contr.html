@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RC-car controller</title>
+    <meta charset="utf-8">
+</head>
+<body  style="position: fixed; font-size: xx-large;">
+  <div>
+    <button onclick="stopCar()">STOP</button>
+  </div>
+  <div>
+    <button onclick="connectToWebSocket()">CONNECT</button>
+    <button onclick="disconnectFromWebSocket()">DISCONNECT</button>
+  </div>
+    <p style="text-align: center;">
+        X: <span id="x_coords"> </span>
+        Y: <span id="y_coords"> </span>
+    </p>
+    <canvas id="canvas" name="game"></canvas>
+    <script src="rc_controller.js" charset="utf-8"></script>
+</body>
+</html>
